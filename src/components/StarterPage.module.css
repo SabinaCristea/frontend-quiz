@@ -1,0 +1,81 @@
+.starterPage {
+  display: flex;
+  justify-content: space-between;
+
+  gap: auto;
+
+  max-width: 116rem;
+
+  margin: 0 auto;
+  position: relative;
+}
+
+.headingContainer {
+  display: block;
+  width: 46.5rem;
+}
+
+h1 {
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%;
+}
+
+h1 span {
+  font-weight: 500;
+}
+
+.headingContainer p {
+  margin-top: 4.8rem;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.quizesList {
+  /* display: inline-block; */
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 2.4rem;
+}
+
+.listItem {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  background: #fff;
+  border-radius: 2.4rem;
+  padding: 2rem;
+  width: 56.4rem;
+
+  cursor: pointer;
+}
+
+.listItem span {
+  padding: 0.8rem;
+  border-radius: 1rem;
+}
+
+.htmlIcon {
+  background-color: #fff1e9;
+}
+.cssIcon {
+  background-color: #e0fdef;
+}
+.javascriptIcon {
+  background-color: #ebf0ff;
+}
+.accessibilityIcon {
+  background-color: #f6e7ff;
+}
+
+.listItem div {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
