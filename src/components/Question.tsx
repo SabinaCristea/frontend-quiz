@@ -61,11 +61,11 @@ function Question() {
     if (questionIndex === numQuestions - 1) {
       dispatch({ type: "finish" });
     }
-    // if (!hasAnswered) {
-    //   setSubmitButtonClicked(true);
-    //   return;
-    // }
-    dispatch({ type: "submitAnswer" });
+    if (!hasAnswered) {
+      setSubmitButtonClicked(true);
+      return;
+    }
+    dispatch({ type: "nextQuestion" });
   };
 
   return (

@@ -49,7 +49,8 @@ type QuizAction =
   | { type: "startJavaScript" }
   | { type: "startAccessibility" }
   | { type: "answerQuestion"; payload: string }
-  | { type: "submitAnswer" }
+  // | { type: "submitAnswer" }
+  | { type: "nextQuestion" }
   | { type: "finish" }
   | { type: "playAgain" };
 
@@ -135,7 +136,12 @@ function reducer(state: QuizState, action: QuizAction): QuizState {
         answer: action.payload,
       };
 
-    case "submitAnswer": {
+    // case "submitAnswer":
+    //   return {
+    //     ...state,
+    //   };
+
+    case "nextQuestion": {
       const currentQuiz = state.quizzes.find(
         (quiz) => quiz.title === state.quizTitle
       );
