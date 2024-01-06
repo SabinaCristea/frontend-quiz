@@ -48,8 +48,7 @@ type QuizAction =
   | { type: "startCSS" }
   | { type: "startJavaScript" }
   | { type: "startAccessibility" }
-  | { type: "answerQuestion"; payload: string }
-  // | { type: "submitAnswer" }
+  | { type: "submitAnswer"; payload: string }
   | { type: "nextQuestion" }
   | { type: "finish" }
   | { type: "playAgain" };
@@ -63,6 +62,7 @@ const initialState: QuizState = {
   quizTitle: "",
   questionIndex: 0,
   answer: null,
+  selectedOptionIndex: null,
   progress: 1,
   correctAnswerCount: 0,
 };
@@ -130,16 +130,11 @@ function reducer(state: QuizState, action: QuizAction): QuizState {
       };
     }
 
-    case "answerQuestion":
+    case "submitAnswer":
       return {
         ...state,
         answer: action.payload,
       };
-
-    // case "submitAnswer":
-    //   return {
-    //     ...state,
-    //   };
 
     case "nextQuestion": {
       const currentQuiz = state.quizzes.find(
@@ -165,11 +160,9 @@ function reducer(state: QuizState, action: QuizAction): QuizState {
     }
 
     case "finish":
-      // const question = state.quizzes.questions.at(state.index);
       return {
         ...state,
         status: "finished",
-        // correctAnswerCount: ,
       };
 
     case "playAgain": {
@@ -200,12 +193,12 @@ function reducer(state: QuizState, action: QuizAction): QuizState {
 
 interface QuizContextProps {
   quizzes: QuizState;
-  questions: Question;
+  questions: Question[];
   status: string;
   quizTitle: string;
   questionIndex: number;
   numQuestions: number;
-  answer: string;
+  answer: string | null;
   hasAnswered: boolean;
   correctAnswer: string;
   dispatch: React.Dispatch<QuizAction>;
