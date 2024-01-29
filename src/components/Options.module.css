@@ -12,12 +12,12 @@
   gap: 3.2rem;
   width: 100%;
 
-  color: #313e51;
+  color: var(--secondary-color);
   border: none;
   border-radius: 2.4rem;
   cursor: pointer;
-  background: #fff;
-  box-shadow: 0 1.6rem 4rem 0 rgba(143, 160, 193, 0.14);
+  background: var(--progress-n-option-bg-color);
+  box-shadow: 0 1.6rem 4rem 0 var(--box-shadow-color);
 
   position: relative;
 }
@@ -30,16 +30,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f4f6fa;
+  background-color: var(--option-letter-background-color);
   border-radius: 0.8rem;
 }
 
 .option:hover .optionLetterContainer {
-  background-color: #f6e7ff;
+  background-color: var(--accessibility-icon-color);
 }
 
 .optionLetter {
-  color: #626c7f;
+  color: var(--option-letter-color);
   width: 5.6rem;
   height: 5.6rem;
 
@@ -49,7 +49,7 @@
 }
 
 .option:hover .optionLetter {
-  color: #a729f5;
+  color: var(--primary-color);
 }
 
 .optionTextContainer {
@@ -65,39 +65,39 @@
 }
 
 .option.selected {
-  border: 3px solid #a729f5;
+  border: 3px solid var(--primary-color);
 }
 
 .option.selected .optionLetterContainer {
-  background-color: #a729f5;
+  background-color: var(--primary-color);
 }
 
 .option.selected .optionLetter {
-  color: #fff;
+  color: var(--color-white);
 }
 
 .option.correct {
-  border: 3px solid #26d782;
+  border: 3px solid var(--correct-answer-color);
 }
 
 .option.correct .optionLetterContainer {
-  background-color: #26d782;
+  background-color: var(--correct-answer-color);
 }
 
 .option.correct .optionLetter {
-  color: #fff;
+  color: var(--color-white);
 }
 
 .option.wrong {
-  border: 3px solid #ee5454;
+  border: 3px solid var(--wrong-answer-color);
 }
 
 .option.wrong .optionLetterContainer {
-  background-color: #ee5454;
+  background-color: var(--wrong-answer-color);
 }
 
 .option.wrong .optionLetter {
-  color: #fff;
+  color: var(--color-white);
 }
 
 .correctIcon {

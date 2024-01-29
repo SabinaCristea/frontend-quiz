@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+@import "./App.module.css";
+@import "styles.css";
 
 * {
   padding: 0;
@@ -16,7 +18,7 @@ html {
 body {
   font-family: "Rubik", sans-serif;
   line-height: 100%;
-  color: #313e51;
+  color: var(--secondary-color);
 
-  background-color: #f4f6fa;
+  background-color: var(--background-color);
 }

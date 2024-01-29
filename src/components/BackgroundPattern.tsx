@@ -1,3 +1,4 @@
+import useSwitcher from "./hooks/useSwitcher";
 import styles from "./BackgroundPattern.module.css";
 
 function BackgroundPattern() {
@@ -10,10 +11,8 @@ function BackgroundPattern() {
         fill="none"
         viewBox="0 0 1440 960"
       >
-        <g stroke="#edf1f9" strokeWidth="144">
-          <circle cx="-50.5" cy="75.5" r="416.5" />
-          <circle cx="1388.5" cy="840.5" r="416.5" />
-        </g>
+        <circle cx="-50.5" cy="75.5" r="416.5" stroke-width="144" />
+        <circle cx="1388.5" cy="840.5" r="416.5" stroke-width="144" />
       </svg>
     </div>
   );

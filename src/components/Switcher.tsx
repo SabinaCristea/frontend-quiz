@@ -2,12 +2,11 @@ import styles from "./Switcher.module.css";
 import useSwitcher from "./hooks/useSwitcher";
 
 function Switcher() {
-  const { isChecked, toggleSwitch } = useSwitcher();
+  const { isDarkMode, toggleSwitch } = useSwitcher();
 
-  const handleSwitchChange = () => {
-    toggleSwitch();
-    // Perform any other actions you need when the switch changes state
-  };
+  // const handleSwitchChange = () => {
+  //   toggleSwitch();
+  // };
 
   return (
     <>
@@ -29,8 +28,8 @@ function Switcher() {
           <label className={styles.switch}>
             <input
               type="checkbox"
-              checked={isChecked}
-              onChange={handleSwitchChange}
+              checked={isDarkMode}
+              onChange={toggleSwitch}
             />
             <span className={`${styles.slider} ${styles.round}`}></span>
           </label>

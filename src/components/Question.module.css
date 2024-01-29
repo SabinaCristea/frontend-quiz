@@ -20,7 +20,7 @@
 .questionNumber {
   display: flex;
 
-  color: #626c7f;
+  color: var(--tertiary-color);
 
   font-size: 2rem;
   font-style: italic;
@@ -31,7 +31,7 @@
 }
 
 .quizQuestion {
-  color: #313e51;
+  color: var(--secondary-color);
 
   font-size: 3.6rem;
   font-weight: 500;
@@ -59,9 +59,9 @@
 .submitBtn {
   border: none;
 
-  color: #fff;
-  background-color: #a729f5;
-  box-shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
+  color: var(--color-white);
+  background-color: var(--primary-color);
+  box-shadow: 0px 16px 40px 0px var(--box-shadow-color);
 
   font-family: inherit;
   font-size: 2.8rem;
@@ -80,7 +80,7 @@
       rgba(255, 255, 255, 0.5) 0%,
       rgba(255, 255, 255, 0.5) 100%
     ),
-    #a729f5;
+    var(--primary-color);
   box-shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
 }
 
@@ -97,7 +97,7 @@
 }
 
 .hasntAnsweredMsg {
-  color: #ee5454;
+  color: var(--wrong-answer-color);
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 150%;

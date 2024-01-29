@@ -32,6 +32,7 @@ h1 span {
   font-style: italic;
   font-weight: 400;
   line-height: 150%;
+  color: var(--tertiary-color);
 }
 
 .quizesList {
@@ -49,7 +50,7 @@ h1 span {
   display: flex;
   align-items: center;
   gap: 3.2rem;
-  background: #fff;
+  background: var(--progress-n-option-bg-color);
   border-radius: 2.4rem;
   padding: 2rem;
   width: 56.4rem;
@@ -63,16 +64,16 @@ h1 span {
 }
 
 .htmlIcon {
-  background-color: #fff1e9;
+  background-color: var(--html-icon-color);
 }
 .cssIcon {
-  background-color: #e0fdef;
+  background-color: var(--css-icon-color);
 }
 .javascriptIcon {
-  background-color: #ebf0ff;
+  background-color: var(--javascript-icon-color);
 }
 .accessibilityIcon {
-  background-color: #f6e7ff;
+  background-color: var(--accessibility-icon-color);
 }
 
 .listItem div {

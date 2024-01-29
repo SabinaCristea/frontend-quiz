@@ -5,15 +5,13 @@ import Header from "./Header";
 import Main from "./Main";
 import Question from "./Question";
 import StarterPage from "./StarterPage";
-import useSwitcher from "./hooks/useSwitcher";
-import "./dark-mode.css";
+import "./styles.css";
 
 function App() {
   const { status } = useQuiz();
-  const { isChecked } = useSwitcher();
 
   return (
-    <div className={`app ${isChecked ? "dark-mode" : ""}`}>
+    <div>
       <Header />
       <Main>
         {status === "ready" && <StarterPage />}

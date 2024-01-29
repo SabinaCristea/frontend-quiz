@@ -1,13 +1,18 @@
 import { useState } from "react";
 
 const useSwitcher = () => {
-  const [isChecked, setIsChecked] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleSwitch = () => {
-    setIsChecked((prevChecked) => !prevChecked);
+    setIsDarkMode((prevMode) => {
+      const newMode = !prevMode;
+      // Update the class on the root element
+      document.documentElement.classList.toggle("dark", newMode);
+      return newMode;
+    });
   };
 
-  return { isChecked, toggleSwitch };
+  return { isDarkMode, toggleSwitch };
 };
 
 export default useSwitcher;
