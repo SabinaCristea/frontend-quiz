@@ -6,6 +6,15 @@
   max-width: 116rem;
 
   margin: 0 auto;
-  padding-top: 8.3rem;
-  padding-bottom: 8.5rem;
+  padding: 8.3rem 1rem 8.5rem 1rem;
+}
+
+/* TABLETS */
+/* 768px width */
+@media (max-width: 48em) {
+  .header {
+    max-width: 64rem;
+
+    padding: 4rem 0 4.9rem 0;
+  }
 }

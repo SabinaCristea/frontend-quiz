@@ -4,9 +4,10 @@
 
   gap: auto;
 
-  width: 116rem;
+  max-width: 116rem;
 
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .title {
@@ -78,4 +79,20 @@
 
   border-radius: 2.4rem;
   cursor: pointer;
+}
+
+/* TABLETS */
+/* 768px width */
+@media (max-width: 48em) {
+  .finishPageContainer {
+    flex-direction: column;
+    max-width: 64rem;
+
+    gap: 6.4rem;
+    padding: 0;
+  }
+
+  .scoreCard {
+    width: 100%;
+  }
 }

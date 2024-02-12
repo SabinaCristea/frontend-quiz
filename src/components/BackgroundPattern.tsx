@@ -1,4 +1,3 @@
-import useSwitcher from "./hooks/useSwitcher";
 import styles from "./BackgroundPattern.module.css";
 
 function BackgroundPattern() {

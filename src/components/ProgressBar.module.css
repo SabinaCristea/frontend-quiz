@@ -29,3 +29,11 @@ progress {
   border-radius: 100px;
   padding: 0.4rem;
 }
+
+/* TABLETS */
+/* 768px width */
+@media (max-width: 48em) {
+  .progress {
+    width: 100%;
+  }
+}
