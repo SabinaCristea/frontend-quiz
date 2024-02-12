@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,400&display=swap");
 @import "./App.module.css";
-@import "styles.css";
+@import "../components/colors-and-media-queries/styles.css";
 
 * {
   padding: 0;

@@ -85,7 +85,6 @@ function reducer(state: QuizState, action: QuizAction): QuizState {
 
     case "startHTML": {
       const questions = state.quizzes[0];
-      console.log(questions.questions);
       return {
         ...state,
         questions: questions.questions,
@@ -96,7 +95,6 @@ function reducer(state: QuizState, action: QuizAction): QuizState {
 
     case "startCSS": {
       const questions = state.quizzes[1];
-      console.log(questions.questions);
 
       return {
         ...state,
@@ -108,7 +106,6 @@ function reducer(state: QuizState, action: QuizAction): QuizState {
 
     case "startJavaScript": {
       const questions = state.quizzes[2];
-      console.log(questions.questions);
 
       return {
         ...state,
@@ -120,7 +117,6 @@ function reducer(state: QuizState, action: QuizAction): QuizState {
 
     case "startAccessibility": {
       const questions = state.quizzes[3];
-      console.log(questions.questions);
 
       return {
         ...state,

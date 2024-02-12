@@ -52,15 +52,6 @@ function Question() {
     }
   };
 
-  console.log(
-    currentQuestion,
-    correctAnswerCount,
-    hasAnswered,
-    correctAnswer,
-    submitButtonClicked,
-    selectedOptionIndex
-  );
-
   const hasntAnsweredMessage = selectedOptionIndex === null &&
     submitButtonClicked && (
       <div className={styles.hasntAnsweredMsg}>
@@ -81,13 +72,6 @@ function Question() {
         <p>Please select an answer</p>
       </div>
     );
-
-  console.log(
-    "submitButtonClicked:",
-    submitButtonClicked,
-    "selectedOptionIndex:",
-    selectedOptionIndex
-  );
 
   const optionsComponent = (
     <Options

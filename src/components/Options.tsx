@@ -12,8 +12,6 @@ function Options({
 }) {
   const { questions, questionIndex, answer, hasAnswered } = useQuiz();
 
-  console.log(selectedOptionIndex);
-
   const correctAnswer = questions[questionIndex].answer;
   const options = questions[questionIndex].options;
 
