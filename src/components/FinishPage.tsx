@@ -1,4 +1,3 @@
-// import { useQuiz } from "../context/QuizContext";
 import { useQuiz } from "../context/QuizContext";
 import BackgroundPattern from "./BackgroundPattern";
 import styles from "./FinishPage.module.css";

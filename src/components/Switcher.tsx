@@ -4,10 +4,6 @@ import useSwitcher from "./hooks/useSwitcher";
 function Switcher() {
   const { isDarkMode, toggleSwitch } = useSwitcher();
 
-  // const handleSwitchChange = () => {
-  //   toggleSwitch();
-  // };
-
   return (
     <>
       <div className={styles.darkModeSwitcher}>

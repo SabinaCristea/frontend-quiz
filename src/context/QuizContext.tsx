@@ -39,6 +39,7 @@ interface QuizState {
   selectedOptionIndex: number | null;
   progress: number;
   correctAnswerCount: number;
+  correctAnswer: string;
 }
 
 type QuizAction =
@@ -65,6 +66,7 @@ const initialState: QuizState = {
   selectedOptionIndex: null,
   progress: 1,
   correctAnswerCount: 0,
+  correctAnswer: "",
 };
 
 function reducer(state: QuizState, action: QuizAction): QuizState {
@@ -196,9 +198,6 @@ function reducer(state: QuizState, action: QuizAction): QuizState {
         return state;
       }
 
-      // const currentQuestion = selectedQuiz.questions[state.questionIndex];
-      // const isCorrect = state.answer === currentQuestion.answer;
-
       return {
         ...initialState,
         quizzes: state.quizzes,
@@ -217,17 +216,28 @@ function reducer(state: QuizState, action: QuizAction): QuizState {
 }
 
 interface QuizContextProps {
-  quizzes: QuizState;
+  quizzes: Quiz[];
   questions: Question[];
-  status: string;
-  quizTitle: string;
+  question: string;
+  options: string[];
+  status:
+    | "loading"
+    | "ready"
+    | "error"
+    | "activeHTML"
+    | "activeCSS"
+    | "activeJavaScript"
+    | "activeAccessibility"
+    | "finished";
+  quizTitle: "" | "HTML" | "CSS" | "JavaScript" | "Accessibility";
   questionIndex: number;
-  numQuestions: number;
   answer: string | null;
-  hasAnswered: boolean;
-  correctAnswer: string;
-  dispatch: React.Dispatch<QuizAction>;
+  progress: number;
   correctAnswerCount: number;
+  correctAnswer: string;
+  numQuestions: number;
+  hasAnswered: boolean;
+  dispatch: React.Dispatch<QuizAction>;
 }
 
 const QuizContext = createContext<QuizContextProps | undefined>(undefined);
@@ -241,12 +251,15 @@ function QuizProvider({ children }: QuizProviderProps) {
     {
       quizzes,
       questions,
+      question,
+      options,
       status,
       quizTitle,
       questionIndex,
       answer,
       progress,
       correctAnswerCount,
+      correctAnswer,
     },
     dispatch,
   ] = useReducer(reducer, initialState);
@@ -267,12 +280,15 @@ function QuizProvider({ children }: QuizProviderProps) {
       value={{
         quizzes,
         questions,
+        question,
+        options,
         status,
         quizTitle,
         questionIndex,
         answer,
         progress,
         correctAnswerCount,
+        correctAnswer,
         numQuestions,
         hasAnswered,
         dispatch,

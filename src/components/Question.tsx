@@ -7,17 +7,10 @@ import styles from "./Question.module.css";
 import { useState } from "react";
 
 function Question() {
-  const {
-    questionIndex,
-    numQuestions,
-    questions,
-    dispatch,
-    correctAnswerCount,
-    hasAnswered,
-  } = useQuiz();
+  const { questionIndex, numQuestions, questions, dispatch, hasAnswered } =
+    useQuiz();
 
   const currentQuestion = questions[questionIndex].question;
-  const correctAnswer = questions[questionIndex].answer;
   const options = questions[questionIndex].options;
 
   const [submitButtonClicked, setSubmitButtonClicked] = useState(false);
@@ -37,7 +30,12 @@ function Question() {
       setSubmitButtonClicked(true);
     } else {
       // Submit the answer and reset the state
-      dispatch({ type: "submitAnswer", payload: options[selectedOptionIndex] });
+      if (selectedOptionIndex !== null) {
+        dispatch({
+          type: "submitAnswer",
+          payload: options[selectedOptionIndex],
+        });
+      }
       setSubmitButtonClicked(false);
     }
   };

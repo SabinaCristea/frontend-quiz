@@ -2,9 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   max-width: 116rem;
-
   margin: 0 auto;
   padding: 8.3rem 1rem 8.5rem 1rem;
 }
@@ -14,7 +12,6 @@
 @media (max-width: 48em) {
   .header {
     max-width: 64rem;
-
     padding: 4rem 0 4.9rem 0;
   }
 }
@@ -24,7 +21,6 @@
 @media (max-width: 23.5em) {
   .header {
     max-width: 32.7rem;
-
     padding: 1.6rem 0 4.8rem 0;
   }
 }
