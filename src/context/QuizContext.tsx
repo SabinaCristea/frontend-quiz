@@ -144,22 +144,48 @@ function reducer(state: QuizState, action: QuizAction): QuizState {
       const currentQuestion = currentQuiz.questions[state.questionIndex];
       const isCorrect = state.answer === currentQuestion.answer;
 
+      let correctAnswerCount = state.correctAnswerCount;
+
+      // Increment correctAnswerCount if the answer is correct
+      if (isCorrect) {
+        correctAnswerCount += 1;
+      }
+
       return {
         ...state,
         answer: null,
         questionIndex: state.questionIndex + 1,
         progress: state.progress + 1,
         correctAnswerCount: isCorrect
-          ? state.correctAnswerCount + 1
+          ? correctAnswerCount
           : state.correctAnswerCount,
       };
     }
 
-    case "finish":
+    case "finish": {
+      const currentQuiz = state.quizzes.find(
+        (quiz) => quiz.title === state.quizTitle
+      );
+
+      if (!currentQuiz) {
+        return state;
+      }
+
+      const currentQuestion = currentQuiz.questions[state.questionIndex];
+      const isCorrect = state.answer === currentQuestion.answer;
+
+      let correctAnswerCount = state.correctAnswerCount;
+
+      if (isCorrect) {
+        correctAnswerCount += 1;
+      }
+
       return {
         ...state,
         status: "finished",
+        correctAnswerCount,
       };
+    }
 
     case "playAgain": {
       const selectedQuiz = state.quizzes.find(
@@ -169,6 +195,9 @@ function reducer(state: QuizState, action: QuizAction): QuizState {
       if (!selectedQuiz) {
         return state;
       }
+
+      // const currentQuestion = selectedQuiz.questions[state.questionIndex];
+      // const isCorrect = state.answer === currentQuestion.answer;
 
       return {
         ...initialState,

@@ -6,7 +6,6 @@ import QuizType from "./QuizType";
 
 function FinishPage() {
   const { numQuestions, correctAnswerCount, dispatch } = useQuiz();
-
   return (
     <>
       <BackgroundPattern />

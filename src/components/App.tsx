@@ -5,7 +5,7 @@ import Header from "./Header";
 import Main from "./Main";
 import Question from "./Question";
 import StarterPage from "./StarterPage";
-import "../components/colors-and-media-queries/styles.css";
+import "../components/colors/styles.css";
 
 function App() {
   const { status } = useQuiz();
