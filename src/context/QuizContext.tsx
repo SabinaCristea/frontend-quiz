@@ -269,7 +269,7 @@ function QuizProvider({ children }: QuizProviderProps) {
   const hasAnswered = answer !== null;
 
   useEffect(function () {
-    fetch("../../data.json")
+    fetch("../data.json")
       .then((res) => res.json())
       .then((data) => dispatch({ type: "dataReceived", payload: data.quizzes }))
       .catch(() => dispatch({ type: "dataFailed" }));
