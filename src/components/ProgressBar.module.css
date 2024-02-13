@@ -37,3 +37,8 @@ progress {
     width: 100%;
   }
 }
+
+/* PHONES */
+/* 375px width */
+@media (max-width: 23.5em) {
+}

@@ -96,3 +96,46 @@
     width: 100%;
   }
 }
+
+/* PHONES */
+/* 375px width */
+@media (max-width: 23.5em) {
+  .finishPageContainer {
+    max-width: 32.7rem;
+    gap: 4rem;
+  }
+
+  .title,
+  .subtitle {
+    font-size: 4rem;
+  }
+
+  .title {
+    padding-bottom: 0.8rem;
+  }
+
+  .scoreContainer {
+    gap: 1.2rem;
+  }
+
+  .scoreCard {
+    height: 24.2rem;
+    padding: 3.2rem;
+    border-radius: 1.2rem;
+  }
+
+  .score {
+    font-size: 8.8rem;
+    margin-top: 1.6rem;
+  }
+
+  .maxScore {
+    font-size: 1.8rem;
+  }
+
+  .resetBtn {
+    font-size: 1.8rem;
+    padding: 1.9rem;
+    border-radius: 1.2rem;
+  }
+}

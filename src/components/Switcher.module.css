@@ -67,3 +67,33 @@ input:checked + .slider:before {
   display: flex;
   gap: 1.6rem;
 }
+
+/* PHONES */
+/* 375px width */
+@media (max-width: 23.5em) {
+  .switch {
+    width: 3.2rem;
+    height: 2rem;
+  }
+
+  .slider:before {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(1.3rem);
+    -ms-transform: translateX(1.3rem);
+    transform: translateX(1.3rem);
+  }
+
+  .darkModeSwitcher {
+    gap: 0.8rem;
+    align-items: center;
+  }
+
+  .darkModeSwitcher svg {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}

@@ -27,3 +27,20 @@
     stroke-width: 22rem;
   }
 }
+
+/* PHONES */
+/* 375px width */
+@media (max-width: 23.5em) {
+  .pattern svg {
+    width: 32.7rem;
+    /* height: 81.2rem; */
+    height: 100%;
+  }
+
+  .pattern svg circle {
+    cx: -9.95rem;
+    cy: 22.65rem;
+    r: 127.45rem;
+    stroke-width: 55rem;
+  }
+}

@@ -126,3 +126,47 @@
     width: 100%;
   }
 }
+
+/* PHONES */
+/* 375px width */
+@media (max-width: 23.5em) {
+  .quizContainer {
+    max-width: 32.7rem;
+    padding-bottom: auto;
+  }
+
+  .questionContainer {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 4rem;
+  }
+
+  .questionNumber {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .quizQuestion {
+    font-size: 2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .optionsContainer {
+    gap: 1.2rem;
+  }
+
+  .submitBtn {
+    font-size: 1.8rem;
+    padding: 1.9rem;
+    border-radius: 1.2rem;
+  }
+
+  .hasntAnsweredMsg {
+    gap: 0.8rem;
+    font-size: 1.8rem;
+  }
+  .hasntAnsweredMsg svg {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}

@@ -118,3 +118,34 @@
     right: 1.2rem;
   }
 }
+
+/* PHONES */
+/* 375px width */
+@media (max-width: 23.5em) {
+  .option {
+    font-size: 1.8rem;
+    padding: 1.2rem;
+    gap: 1.6rem;
+    border-radius: 1.2rem;
+  }
+
+  .option:not(:last-child) {
+    margin-bottom: 1.2rem;
+  }
+
+  .optionLetterContainer {
+    border-radius: 0.6rem;
+  }
+
+  .optionLetter {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .correctIcon {
+    top: 1.6rem;
+    right: 1.2rem;
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+}
