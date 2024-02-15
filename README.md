@@ -2,14 +2,7 @@
 
 ## App built using Typescript, React & Vite
 
-![Screenshot](src/assets/images/quiz-desktop-light.png)
-![Screenshot](src/assets/images/quiz-desktop-dark.png)
-![Screenshot](src/assets/images/quiz-tablet-light.png)
-![Screenshot](src/assets/images/quiz-tablet-dark.png)
-![Screenshot](src/assets/images/quiz-phone-light.png)
-![Screenshot](src/assets/images/quiz-phone-dark.png)
-
-<img src="src/assets/images/quiz-desktop-light.png" alt="Image" width="20" height="20">
+<img src="src/assets/images/quiz-desktop-light.png" alt="Image" width=50% height=50%>
 
 ## Live Demo
 Click [here](https://frontend-quiz-sabina.netlify.app/) to see the live demo of the Frontend Quiz.
