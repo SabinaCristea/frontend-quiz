@@ -149,7 +149,6 @@ function reducer(state: QuizState, action: QuizAction): QuizState {
 
       let correctAnswerCount = state.correctAnswerCount;
 
-      // Increment correctAnswerCount if the answer is correct
       if (isCorrect) {
         correctAnswerCount += 1;
       }
@@ -270,16 +269,8 @@ function QuizProvider({ children }: QuizProviderProps) {
   const hasAnswered = answer !== null;
 
   useEffect(() => {
-    // Dispatch the received data directly
     dispatch({ type: "dataReceived", payload: data.quizzes });
   }, []);
-  // useEffect(function () {
-  //   fetch("/data.json")
-  //     // fetch("frontend-quiz/data.json")
-  //     .then((res) => res.json())
-  //     .then((data) => dispatch({ type: "dataReceived", payload: data.quizzes }))
-  //     .catch(() => dispatch({ type: "dataFailed" }));
-  // }, []);
 
   return (
     <QuizContext.Provider
