@@ -9,10 +9,12 @@
 ![Screenshot](src/assets/images/quiz-phone-light.png)
 ![Screenshot](src/assets/images/quiz-phone-dark.png)
 
-# Live Demo
+<img src="src/assets/images/quiz-desktop-light.png" alt="Image" width="20" height="20">
+
+## Live Demo
 Click [here](https://frontend-quiz-sabina.netlify.app/) to see the live demo of the Frontend Quiz.
 
-# Brief
+## Brief
 Users should be able to:
 - Select a quiz subject
 - Select a single answer from each question from a choice of four
@@ -26,15 +28,15 @@ Users should be able to:
 - Navigate the entire app only using their keyboard
 - Change the app's theme between light and dark
 
-# Technologies Used
+## Technologies Used
 - TypeScript
 - React
 - Vite
 - Context API
 - CSS modules
 
-# License
+## License
 This project is licensed under [Frontend Mentor](https://www.frontendmentor.io/).
 
-# Contact
+## Contact
 For any questions or inquiries, please feel free to reach out to me at sabinacristea997@gmail.com.
