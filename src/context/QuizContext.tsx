@@ -247,6 +247,14 @@ interface QuizProviderProps {
 }
 
 function QuizProvider({ children }: QuizProviderProps) {
+  useEffect(function () {
+    fetch("../data.json")
+      // fetch("frontend-quiz/data.json")
+      .then((res) => res.json())
+      .then((data) => dispatch({ type: "dataReceived", payload: data.quizzes }))
+      .catch(() => dispatch({ type: "dataFailed" }));
+  }, []);
+
   const [
     {
       quizzes,
@@ -267,14 +275,6 @@ function QuizProvider({ children }: QuizProviderProps) {
   const numQuestions = quizzes.length > 0 ? quizzes[0].questions.length : 0;
 
   const hasAnswered = answer !== null;
-
-  useEffect(function () {
-    // fetch("../data.json")
-    fetch("frontend-quiz/data.json")
-      .then((res) => res.json())
-      .then((data) => dispatch({ type: "dataReceived", payload: data.quizzes }))
-      .catch(() => dispatch({ type: "dataFailed" }));
-  }, []);
 
   return (
     <QuizContext.Provider
