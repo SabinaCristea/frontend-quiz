@@ -2,13 +2,6 @@
 
 ## App built using Typescript, React & Vite
 
-<img src="src/assets/images/quiz-desktop-light.png" alt="Image1" width=50% height=50%>
-<img src="src/assets/images/quiz-desktop-dark.png" alt="Image2" width=50% height=50%>
-<img src="src/assets/images/quiz-tablet-light.png" alt="Image3" width=30% height=30%>
-<img src="src/assets/images/quiz-tablet-dark.png" alt="Image4" width=30% height=30%>
-<img src="src/assets/images/quiz-phone-light.png" alt="Image5" width=20% height=20%>
-<img src="src/assets/images/quiz-phone-dark.png" alt="Image6" width=20% height=20%>
-
 ## Live Demo
 Click [here](https://frontend-quiz-sabina.netlify.app/) to see the live demo of the Frontend Quiz.
 
@@ -32,6 +25,15 @@ Users should be able to:
 - Vite
 - Context API
 - CSS modules
+
+## Screenshots
+<img src="src/assets/images/quiz-desktop-light.png" alt="Image1" width=50% height=50%>
+<img src="src/assets/images/quiz-desktop-dark.png" alt="Image2" width=50% height=50%>
+<img src="src/assets/images/quiz-tablet-light.png" alt="Image3" width=30% height=30%>
+<img src="src/assets/images/quiz-tablet-dark.png" alt="Image4" width=30% height=30%>
+<img src="src/assets/images/quiz-phone-light.png" alt="Image5" width=20% height=20%>
+<img src="src/assets/images/quiz-phone-dark.png" alt="Image6" width=20% height=20%>
+
 
 ## License
 This project is licensed under [Frontend Mentor](https://www.frontendmentor.io/).
