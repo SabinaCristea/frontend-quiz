@@ -5,8 +5,8 @@
 <img src="src/assets/images/quiz-desktop-light.png" alt="Image1" width=50% height=50%>
 <img src="src/assets/images/quiz-desktop-dark.png" alt="Image2" width=50% height=50%>
 <img src="src/assets/images/quiz-tablet-light.png" alt="Image3" width=50% height=50%>
-<img src="src/assets/images/quiz-tablet-dark" alt="Image4" width=50% height=50%>
-<img src="src/assets/images/quiz-phone-light" alt="Image5" width=50% height=50%>
+<img src="src/assets/images/quiz-tablet-dark.png" alt="Image4" width=50% height=50%>
+<img src="src/assets/images/quiz-phone-light.png" alt="Image5" width=50% height=50%>
 <img src="src/assets/images/quiz-phone-dark.png" alt="Image6" width=50% height=50%>
 
 ## Live Demo
