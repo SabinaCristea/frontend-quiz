@@ -1,5 +1,5 @@
 import styles from "./Switcher.module.css";
-import useSwitcher from "./hooks/useSwitcher";
+import useSwitcher from "../hooks/useSwitcher";
 
 function Switcher() {
   const { isDarkMode, toggleSwitch } = useSwitcher();
