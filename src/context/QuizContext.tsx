@@ -1,3 +1,4 @@
+import data from "../../data.json";
 import React, {
   createContext,
   useContext,
@@ -268,13 +269,17 @@ function QuizProvider({ children }: QuizProviderProps) {
 
   const hasAnswered = answer !== null;
 
-  useEffect(function () {
-    fetch("/data.json")
-      // fetch("frontend-quiz/data.json")
-      .then((res) => res.json())
-      .then((data) => dispatch({ type: "dataReceived", payload: data.quizzes }))
-      .catch(() => dispatch({ type: "dataFailed" }));
+  useEffect(() => {
+    // Dispatch the received data directly
+    dispatch({ type: "dataReceived", payload: data.quizzes });
   }, []);
+  // useEffect(function () {
+  //   fetch("/data.json")
+  //     // fetch("frontend-quiz/data.json")
+  //     .then((res) => res.json())
+  //     .then((data) => dispatch({ type: "dataReceived", payload: data.quizzes }))
+  //     .catch(() => dispatch({ type: "dataFailed" }));
+  // }, []);
 
   return (
     <QuizContext.Provider
