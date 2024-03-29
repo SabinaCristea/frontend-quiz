@@ -119,7 +119,7 @@ h1 span {
 
 /* PHONES */
 /* 375px width */
-@media (max-width: 23.5em) {
+@media (max-width: 450px) {
   .starterPage {
     max-width: 37.5rem;
 
@@ -127,7 +127,7 @@ h1 span {
   }
 
   .headingContainer {
-    width: 32.7rem;
+    width: auto;
   }
 
   h1 {

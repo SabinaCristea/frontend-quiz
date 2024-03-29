@@ -1,5 +1,5 @@
 import { useQuiz } from "../context/QuizContext";
-import "./App.module.css";
+import styles from "./App.module.css";
 import FinishPage from "./FinishPage";
 import Header from "./Header";
 import Main from "./Main";
@@ -11,7 +11,7 @@ function App() {
   const { status } = useQuiz();
 
   return (
-    <>
+    <div className={styles.app}>
       <Header />
       <Main>
         {status === "ready" && <StarterPage />}
@@ -21,7 +21,7 @@ function App() {
           status === "activeAccessibility") && <Question />}
         {status === "finished" && <FinishPage />}
       </Main>
-    </>
+    </div>
   );
 }
 

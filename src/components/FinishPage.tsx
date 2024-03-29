@@ -1,5 +1,5 @@
 import { useQuiz } from "../context/QuizContext";
-import BackgroundPattern from "./BackgroundPattern";
+// import BackgroundPattern from "./BackgroundPattern";
 import styles from "./FinishPage.module.css";
 import QuizType from "./QuizType";
 
@@ -7,7 +7,7 @@ function FinishPage() {
   const { numQuestions, correctAnswerCount, dispatch } = useQuiz();
   return (
     <>
-      <BackgroundPattern />
+      {/* <BackgroundPattern /> */}
       <div className={styles.finishPageContainer}>
         <div className={styles.headingContainer}>
           <h1 className={styles.title}>Quiz completed</h1>

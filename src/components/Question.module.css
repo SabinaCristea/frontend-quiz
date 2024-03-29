@@ -7,7 +7,7 @@
   max-width: 116rem;
 
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 4rem;
 }
 
 .questionContainer {
@@ -103,13 +103,13 @@
 
 /* TABLETS */
 /* 768px width */
-@media (max-width: 48em) {
+@media (max-width: 1150px) {
   .quizContainer {
     flex-direction: column;
 
     max-width: 64rem;
 
-    padding: 0 0 5.7rem 0;
+    padding: 0 2rem 5.7rem 2rem;
   }
 
   .questionContainer {
@@ -129,9 +129,9 @@
 
 /* PHONES */
 /* 375px width */
-@media (max-width: 23.5em) {
+@media (max-width: 450px) {
   .quizContainer {
-    max-width: 32.7rem;
+    width: auto;
     padding-bottom: auto;
   }
 

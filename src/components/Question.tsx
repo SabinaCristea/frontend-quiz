@@ -1,5 +1,5 @@
 import { useQuiz } from "../context/QuizContext";
-import BackgroundPattern from "./BackgroundPattern";
+// import BackgroundPattern from "./BackgroundPattern";
 import Options from "./Options";
 import ProgressBar from "./ProgressBar";
 
@@ -91,7 +91,7 @@ function Question() {
 
   return (
     <>
-      <BackgroundPattern />
+      {/* <BackgroundPattern /> */}
 
       <div className={styles.quizContainer}>
         <div className={styles.questionContainer}>

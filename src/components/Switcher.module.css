@@ -70,7 +70,7 @@ input:checked + .slider:before {
 
 /* PHONES */
 /* 375px width */
-@media (max-width: 23.5em) {
+@media (max-width: 450px) {
   .switch {
     width: 3.2rem;
     height: 2rem;

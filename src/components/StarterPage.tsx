@@ -1,5 +1,5 @@
 import { useQuiz } from "../context/QuizContext";
-import BackgroundPattern from "./BackgroundPattern";
+// import BackgroundPattern from "./BackgroundPattern";
 
 import styles from "./StarterPage.module.css";
 
@@ -8,7 +8,7 @@ function StarterPage() {
 
   return (
     <>
-      <BackgroundPattern />
+      {/* <BackgroundPattern /> */}
 
       <div className={styles.starterPage}>
         <div className={styles.headingContainer}>

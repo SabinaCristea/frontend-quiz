@@ -11,35 +11,35 @@
 /* 768px width */
 @media (max-width: 48em) {
   .pattern {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
   }
 
-  .pattern svg {
+  /* .pattern svg {
     width: 74.9rem;
     height: 91rem;
-  }
+  } */
 
-  .pattern svg circle {
+  /* .pattern svg circle {
     cx: 1.05rem;
     cy: -39.35rem;
     r: 61.45rem;
     stroke-width: 22rem;
-  }
+  } */
 }
 
 /* PHONES */
 /* 375px width */
-@media (max-width: 23.5em) {
+@media (max-width: 360px) {
   .pattern svg {
-    width: 32.7rem;
-    height: 100%;
+    /* width: 32.7rem;
+    height: 100%; */
   }
 
   .pattern svg circle {
-    cx: -9.95rem;
+    /* cx: -9.95rem;
     cy: 22.65rem;
     r: 127.45rem;
-    stroke-width: 55rem;
+    stroke-width: 55rem; */
   }
 }

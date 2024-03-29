@@ -121,9 +121,9 @@
 
 /* PHONES */
 /* 375px width */
-@media (max-width: 23.5em) {
+@media (max-width: 450px) {
   .option {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     padding: 1.2rem;
     gap: 1.6rem;
     border-radius: 1.2rem;

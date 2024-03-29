@@ -9,18 +9,18 @@
 
 /* TABLETS */
 /* 768px width */
-@media (max-width: 48em) {
+@media (max-width: 1150px) {
   .header {
     max-width: 64rem;
-    padding: 4rem 0 4.9rem 0;
+    padding: 4rem 2rem 4.9rem 2rem;
   }
 }
 
 /* PHONES */
 /* 375px width */
-@media (max-width: 23.5em) {
+@media (max-width: 450px) {
   .header {
-    max-width: 32.7rem;
-    padding: 1.6rem 0 4.8rem 0;
+    width: auto;
+    padding: 1.6rem 2rem 4.8rem 2rem;
   }
 }

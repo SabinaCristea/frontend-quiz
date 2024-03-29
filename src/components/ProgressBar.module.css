@@ -33,7 +33,7 @@ progress {
 
 /* TABLETS */
 /* 768px width */
-@media (max-width: 48em) {
+@media (max-width: 1150px) {
   .progress {
     width: 100%;
   }
@@ -41,5 +41,11 @@ progress {
 
 /* PHONES */
 /* 375px width */
-@media (max-width: 23.5em) {
+@media (max-width: 450px) {
+  .progress {
+    height: 1.2rem;
+  }
+  progress {
+    height: 0.8rem;
+  }
 }

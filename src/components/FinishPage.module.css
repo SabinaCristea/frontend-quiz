@@ -83,13 +83,13 @@
 
 /* TABLETS */
 /* 768px width */
-@media (max-width: 48em) {
+@media (max-width: 1150px) {
   .finishPageContainer {
     flex-direction: column;
     max-width: 64rem;
 
     gap: 6.4rem;
-    padding: 0;
+    padding: 0 2rem;
   }
 
   .scoreCard {
@@ -99,10 +99,11 @@
 
 /* PHONES */
 /* 375px width */
-@media (max-width: 23.5em) {
+@media (max-width: 450px) {
   .finishPageContainer {
-    max-width: 32.7rem;
+    width: auto;
     gap: 4rem;
+    padding: 0 2rem;
   }
 
   .title,

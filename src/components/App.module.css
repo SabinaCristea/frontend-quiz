@@ -22,3 +22,13 @@ body {
 
   background-color: var(--background-color);
 }
+
+/* .app {
+  margin: 8rem auto;
+} */
+
+@media (max-width: 450px) {
+  .app {
+    margin: 2rem auto;
+  }
+}

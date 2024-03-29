@@ -36,7 +36,7 @@
 
 /* PHONES */
 /* 375px width */
-@media (max-width: 23.5em) {
+@media (max-width: 450px) {
   .quizType {
     gap: 1.6rem;
   }
